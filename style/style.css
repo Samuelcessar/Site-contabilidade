@@ -1,0 +1,73 @@
+
+.comeco,.contatos1,.links-uteis{
+    background-image: url(/Imagem/contabilidade-fundo01.jpg);
+    padding: 50px;
+    /*border-style:solid;*/
+    border-bottom:solid;
+
+}
+
+
+/*.começo{
+    background-image: url("/Imagem/contabilidade-fundo01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 0px;
+    height: 0px;
+    border: 2px, red;
+    border-radius: 3px;
+    border-bottom: 2px;
+    border-style: solid;
+    border-width: 2px
+}*/
+
+body{
+    padding: 5px;
+    padding-bottom: 500;
+    background-color: rgb(255, 255, 255);
+    background-image:url();
+    height: 200px;
+    width: auto;
+
+}   
+.cabeçalho{
+    padding: 5px;
+    background-color: rgba(0, 176, 192, 0.5);
+    text-align: end;
+    font-size: 20px;
+}
+h1{
+    border-radius: solid, color red;
+    color: brown;
+    text-align: center;
+}
+
+h2{
+    color: brown;
+}
+dt{
+    font-size: 40px;
+    color: brown;
+}
+p{
+    font-size: 20px;
+    text-align: center;
+}
+li{
+    font-size: 20px;
+}
+.ddde{
+padding: 3px;
+display: flex;
+flex-direction: row;
+justify-content: end;
+flex-wrap: wrap;
+}
+
+/*https://www.w3schools.com/css/css3_flexbox_container.asp*/
+
+.Contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
