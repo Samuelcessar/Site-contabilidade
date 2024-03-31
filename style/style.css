@@ -7,47 +7,30 @@
 
 }
 
-
-/*.começo{
-    background-image: url("/Imagem/contabilidade-fundo01.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-width: 0px;
-    height: 0px;
-    border: 2px, red;
-    border-radius: 3px;
-    border-bottom: 2px;
-    border-style: solid;
-    border-width: 2px
-}*/
-
 body{
     padding: 5px;
     padding-bottom: 500;
-    background-color: rgb(255, 255, 255);
-    background-image:url();
+    background-color: rgba(255, 255, 255, 0.945);
     height: 200px;
     width: auto;
 
 }   
 .cabeçalho{
     padding: 5px;
-    background-color: rgba(0, 176, 192, 0.5);
+    background-color: #173f8f;
     text-align: end;
     font-size: 20px;
 }
 h1{
-    border-radius: solid, color red;
-    color: brown;
+    color: #173f8f;
     text-align: center;
 }
 
 h2{
     color: brown;
 }
-dt{
+ul{
     font-size: 40px;
-    color: brown;
 }
 p{
     font-size: 20px;
@@ -70,4 +53,13 @@ flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+.btn{
+    background-color: #a5a5a5;
+
+}
+
+.nav-wrapper{
+    background-color: #173f8f;
+    
 }
