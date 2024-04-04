@@ -27,9 +27,11 @@ h1{
 }
 
 h2{
+    padding-left: 15px;
     color: brown;
 }
 ul{
+    padding-left: 15px;
     font-size: 40px;
 }
 p{
@@ -37,6 +39,7 @@ p{
     text-align: center;
 }
 li{
+    padding-left: 15px;
     font-size: 20px;
 }
 .ddde{
@@ -45,6 +48,7 @@ display: flex;
 flex-direction: row;
 justify-content: end;
 flex-wrap: wrap;
+
 }
 
 /*https://www.w3schools.com/css/css3_flexbox_container.asp*/
@@ -62,4 +66,7 @@ flex-wrap: wrap;
 .nav-wrapper{
     background-color: #173f8f;
     
+}
+.z-depth-1{
+    padding-left: 15px;
 }
