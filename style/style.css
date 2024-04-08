@@ -1,6 +1,6 @@
 
 .comeco,.contatos1,.links-uteis{
-    background-image: url(../Imagem/contabilidade-fundo01.jpg);
+    background-image: url(../Imagem/contabilidade-fundo011.jpg);
     padding: 50px;
     /*border-style:solid;*/
     border-bottom:solid;
@@ -20,6 +20,11 @@
     background-color: #173f8f;
     text-align: end;
     font-size: 20px;
+}
+.nav-wrapper{
+    background-color: #173f8f;
+    padding-left: 30px;
+    
 }
 h1{
     color: #173f8f;
@@ -63,10 +68,7 @@ flex-wrap: wrap;
 
 }
 
-.nav-wrapper{
-    background-color: #173f8f;
-    
-}
+
 .z-depth-1{
     padding-left: 15px;
 }
