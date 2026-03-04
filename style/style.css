@@ -1,75 +1,113 @@
+* {
+    box-sizing: border-box;
+}
 
-.comeco,.contatos1,.links-uteis{
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+}
+
+.comeco,
+.contatos1,
+.links-uteis {
     background-image: url(../Imagem/contabilidade-fundo011.jpg);
     padding: 50px;
-    /*border-style:solid;*/
-    border-bottom:solid;
+    border-bottom: solid;
 }
 
-.body{
-    padding: 5px;
-    padding-bottom: 500;
-    background-color: rgba(255, 255, 255, 0.945);
-    height: 200px;
-    width: auto;
+.nav-wrapper {
+    background-color: #173f8f;
+    padding: 12px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
 
-}   
-.cabeçalho{
-    padding: 5px;
-    background-color: #173f8f;
-    text-align: end;
-    font-size: 20px;
-   
+.brand-logo {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
-.nav-wrapper{
-    background-color: #173f8f;
-    padding-left: 30px;
-    
+
+#nav-mobile {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-h1{
+
+#nav-mobile li {
+    display: inline-block;
+    margin-left: 12px;
+}
+
+#nav-mobile a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+h1 {
     color: #173f8f;
     text-align: center;
     font-family: fantasy;
 }
 
-h2{
+h2 {
     padding-left: 15px;
     color: brown;
 }
-ul{
+
+ul {
     padding-left: 15px;
     font-size: 40px;
 }
-p{
+
+p {
     font-size: 20px;
     text-align: center;
 }
-li{
+
+li {
     padding-left: 15px;
     font-size: 20px;
 }
-.ddde{
-padding: 3px;
-display: flex;
-flex-direction: row;
-justify-content: end;
-flex-wrap: wrap;
 
+.ddde {
+    padding: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    flex-wrap: wrap;
 }
 
-/*https://www.w3schools.com/css/css3_flexbox_container.asp*/
-
-.Contato{
+.Contato {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.btn{
-    background-color: #a5a5a5;
 
+.btn {
+    background-color: #a5a5a5;
 }
 
-
-.z-depth-1{
+.z-depth-1 {
     padding-left: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.z-depth-5 {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .hide-on-med-and-down {
+        display: none;
+    }
+
+    .nav-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
