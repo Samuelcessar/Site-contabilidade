@@ -4,7 +4,7 @@ Treinando HTML - CSS.
 
 ## Rodando o projeto offline
 
-O projeto foi ajustado para usar o CSS local (`style/style.css`) como base visual principal, reduzindo a dependência do Materialize para melhorar a resiliência em modo offline.
+O projeto agora funciona **100% offline**, usando apenas arquivos locais (HTML, CSS e imagens), sem dependências de CDN.
 
 ### Opção 1: abrir direto no navegador
 1. Faça o download/clone deste repositório.
@@ -24,7 +24,6 @@ Depois acesse:
 http://localhost:8000
 ```
 
-## Observação sobre dependências
-- O layout principal funciona com o CSS local.
-- O JavaScript do Materialize foi movido para o final do `body` com `defer`, reduzindo bloqueio de renderização.
-- Se desejar operação 100% offline (sem CDN), o próximo passo é versionar localmente o arquivo JS do Materialize ou removê-lo completamente caso não seja necessário.
+## Observação sobre framework
+- O CSS principal local `style/style.css` é a base visual mínima do site.
+- Como o uso de recursos do Materialize era mínimo, a dependência do framework foi removida para reduzir bloqueio de renderização e evitar falhas em ambiente sem internet.
