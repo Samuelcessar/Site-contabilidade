@@ -1,75 +1,248 @@
-
-.comeco,.contatos1,.links-uteis{
-    background-image: url(../Imagem/contabilidade-fundo011.jpg);
-    padding: 50px;
-    /*border-style:solid;*/
-    border-bottom:solid;
+:root {
+  --primary: #173f8f;
+  --primary-dark: #0f2a60;
+  --accent: #b8742f;
+  --surface: #ffffff;
+  --background: #f3f6fb;
+  --text: #1c2533;
+  --muted: #5b6472;
+  --radius: 14px;
+  --shadow: 0 8px 24px rgba(23, 63, 143, 0.12);
 }
 
-.body{
-    padding: 5px;
-    padding-bottom: 500;
-    background-color: rgba(255, 255, 255, 0.945);
-    height: 200px;
-    width: auto;
-
-}   
-.cabeçalho{
-    padding: 5px;
-    background-color: #173f8f;
-    text-align: end;
-    font-size: 20px;
-   
-}
-.nav-wrapper{
-    background-color: #173f8f;
-    padding-left: 30px;
-    
-}
-h1{
-    color: #173f8f;
-    text-align: center;
-    font-family: fantasy;
+* {
+  box-sizing: border-box;
 }
 
-h2{
-    padding-left: 15px;
-    color: brown;
-}
-ul{
-    padding-left: 15px;
-    font-size: 40px;
-}
-p{
-    font-size: 20px;
-    text-align: center;
-}
-li{
-    padding-left: 15px;
-    font-size: 20px;
-}
-.ddde{
-padding: 3px;
-display: flex;
-flex-direction: row;
-justify-content: end;
-flex-wrap: wrap;
-
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: var(--background);
+  line-height: 1.6;
 }
 
-/*https://www.w3schools.com/css/css3_flexbox_container.asp*/
-
-.Contato{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.btn{
-    background-color: #a5a5a5;
-
+img {
+  max-width: 100%;
+  display: block;
 }
 
+.container {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
 
-.z-depth-1{
-    padding-left: 15px;
+.site-header {
+  background: linear-gradient(115deg, var(--primary-dark), var(--primary));
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 72px;
+  gap: 1rem;
+}
+
+.brand-logo {
+  font-size: clamp(1rem, 2.6vw, 1.35rem);
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  transition: background-color 0.2s ease;
+}
+
+.main-nav a:hover,
+.main-nav a[aria-current="page"] {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.hero,
+.page-hero {
+  padding: clamp(2.5rem, 6vw, 4.8rem) 0;
+  background: radial-gradient(circle at top right, rgba(184, 116, 47, 0.15), transparent 55%);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: clamp(1rem, 3vw, 3rem);
+  align-items: center;
+}
+
+.hero h1,
+.page-hero h1 {
+  font-size: clamp(1.9rem, 4.2vw, 3rem);
+  color: var(--primary-dark);
+  margin: 0 0 0.8rem;
+  line-height: 1.2;
+}
+
+.hero p,
+.page-hero p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.hero-image {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.section-title {
+  color: var(--primary);
+  margin-top: 0;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.2rem 0 2rem;
+}
+
+.card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 1.2rem;
+  box-shadow: var(--shadow);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--primary-dark);
+}
+
+.highlight {
+  border-left: 4px solid var(--accent);
+}
+
+.link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-list li + li {
+  margin-top: 0.8rem;
+}
+
+.link-list a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link-list a:hover {
+  text-decoration: underline;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.site-footer {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  border-top: 1px solid #dbe1ec;
+  background: #fff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.whatsapp-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.whatsapp-link img {
+  width: 36px;
+  height: 36px;
+}
+
+@media (max-width: 920px) {
+  .hero-grid,
+  .cards-grid,
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-grid > *:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .main-nav {
+    gap: 0;
+  }
+
+  .main-nav a {
+    padding-inline: 0.55rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .nav-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.6rem 0;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+  }
+
+  .hero-grid,
+  .cards-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+    animation: none !important;
+  }
 }
