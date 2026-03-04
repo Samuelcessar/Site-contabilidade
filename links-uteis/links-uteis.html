@@ -14,41 +14,45 @@
 </head>
 
 <body>
-
-
-  <nav>
-    <div class="nav-wrapper">
+  <header class="site-header">
+    <nav class="container nav-wrapper" aria-label="Navegação principal">
       <a href="../index.html" class="brand-logo">Contabilidade Inteligente</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <ul class="main-nav">
         <li><a href="../index.html">Home</a></li>
-        <li><a href="../links-uteis/links-uteis.html">Links úteis</a></li>
+        <li><a href="../links-uteis/links-uteis.html" aria-current="page">Links úteis</a></li>
         <li><a href="../contato/contato.html">Contato</a></li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <!--<div class="cabeçalho">
-          <a href="../index.html" class="waves-effect waves-light btn">Home</a>
-          <a href="/links-uteis/links-uteis.html" target="_blank" class="waves-effect waves-light btn" >Links úteis</a>
-          <a href="/contato/contato.html" class="waves-effect waves-light btn" >Contato</a>
-      </div> -->
   <main>
-    <section class="links-uteis">
-      <h1>Links úteis</h1>
-      <h2>Serviços e portais</h2>
-      <ol>
-        <li><a href="https://cav.receita.fazenda.gov.br/autenticacao/login" target="_blank">ECAC</a></li>
-        <li><a href="https://iss.fortaleza.ce.gov.br/grpfor/login.seam?cid=304742" target="_blank">ISS Fortaleza-CE</a>
-        </li>
-        <li><a href="https://www.sefaz.ce.gov.br/" target="_blank">Sefaz CE</a></li>
-        <li><a href="https://www.gov.br/receitafederal/pt-br" target="_blank">Receita Federal</a></li>
-      </ol>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Links úteis</h1>
+        <p>Portais essenciais para manter sua rotina fiscal e tributária em dia.</p>
+      </div>
+    </section>
+
+    <section class="container" aria-label="Serviços e portais">
+      <article class="card">
+        <h2 class="section-title">Serviços e portais</h2>
+        <ul class="link-list">
+          <li><a href="https://cav.receita.fazenda.gov.br/autenticacao/login" target="_blank" rel="noopener noreferrer">ECAC</a></li>
+          <li><a href="https://iss.fortaleza.ce.gov.br/grpfor/login.seam?cid=304742" target="_blank" rel="noopener noreferrer">ISS Fortaleza-CE</a></li>
+          <li><a href="https://www.sefaz.ce.gov.br/" target="_blank" rel="noopener noreferrer">Sefaz CE</a></li>
+          <li><a href="https://www.gov.br/receitafederal/pt-br" target="_blank" rel="noopener noreferrer">Receita Federal</a></li>
+        </ul>
+      </article>
     </section>
   </main>
-  <footer>
-    <div class="ddde">
-      <a href="https://wa.me/5585911111111" target="_parent"><img src="../Imagem/icons8-whatsapp-48.png"
-          alt="icone do wpp"></a>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <small>Central de apoio contábil.</small>
+      <a class="whatsapp-link" href="https://wa.me/5585911111111" target="_blank" rel="noopener noreferrer">
+        <img src="../Imagem/icons8-whatsapp-48.png" alt="WhatsApp" loading="lazy" width="48" height="48" />
+        WhatsApp
+      </a>
     </div>
   </footer>
 </body>
