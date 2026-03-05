@@ -118,11 +118,18 @@ img {
 }
 
 .hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--color-surface);
     border: 1px solid var(--color-border);
     border-radius: 16px;
     padding: 0.8rem;
     box-shadow: 0 10px 30px rgba(80, 53, 62, 0.15);
+}
+
+.hero-image img {
+    margin: 0 auto;
 }
 
 h1 {
