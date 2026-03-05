@@ -52,9 +52,21 @@ img {
     color: #fff;
     text-decoration: none;
     display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: 0.65rem;
     line-height: 1.05;
+}
+
+.brand-logo img {
+    height: 44px;
+    width: auto;
+    flex-shrink: 0;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.08rem;
 }
 
 .brand-title {
@@ -258,6 +270,11 @@ li {
     }
     .brand-logo {
         max-width: 100%;
+        gap: 0.5rem;
+    }
+
+    .brand-logo img {
+        height: 38px;
     }
 
     .brand-title {
