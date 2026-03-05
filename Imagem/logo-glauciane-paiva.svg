@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="170" viewBox="0 0 640 170" role="img" aria-labelledby="title desc">
+  <title id="title">Logo Glauciane Paiva Consultoria Contábil</title>
+  <desc id="desc">Símbolo geométrico em tons rosé ao lado do texto Glauciane Paiva Consultoria Contábil.</desc>
+  <rect width="640" height="170" fill="none"/>
+
+  <!-- Símbolo -->
+  <polygon points="40,120 115,64 125,76 40,138" fill="#cfa295"/>
+  <polygon points="125,76 152,55 152,138 125,118" fill="#b77f6f"/>
+  <polygon points="40,138 64,138 64,112 40,129" fill="#8c6557"/>
+  <polygon points="74,138 98,138 98,95 74,111" fill="#b08b80"/>
+  <polygon points="108,138 132,138 132,86 108,104" fill="#d6b6ad"/>
+  <polygon points="125,76 152,55 132,50" fill="#92695d"/>
+
+  <!-- Texto -->
+  <text x="175" y="93" font-family="Segoe UI, Arial, sans-serif" font-size="66" font-weight="600" letter-spacing="0.5" fill="#5a434b">Glauciane Paiva</text>
+  <text x="177" y="130" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="400" fill="#5a434b">Consultoria Contábil</text>
+</svg>
